@@ -1,0 +1,202 @@
+/* ************************* G E N E R A L E S ************************* */
+
+:root {
+    /* lista de colores en variables */
+    /* 
+    ESTRUCTURA
+        --nombreVariable: #Color; 
+    
+    MODO DE USO
+        En vez de usar hexadecimales, usar var(--fondo)
+    */
+    --fondo: #f1e8df;
+    --navbar: #000000;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fondo);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 20px;
+    margin: 0;
+}
+
+h2 {
+    font-style: italic;
+    margin-top: 3px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none; /* elimina el subrayado */
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+
+/* ************************* I D E N T I F I C A D O R E S ************************* */
+
+
+/* ************************* C L A S E S ************************* */
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--navbar);
+    height: 70px;
+    width: 100vw;
+    align-items: center;
+    position: fixed; /*posición fijada*/
+    top: 0; /* navbar pegado arriba */
+}
+
+.navbar { 
+    margin-right: 300px;
+}
+
+.navbar a { /*todas las etiquetas <a> dentro de la clase .navbar*/
+    color: #fff;
+    margin-right: 40px; /*separa*/
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centrado-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.marco-blanco {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.marco {
+    height: 270px;
+    width: 270px;
+    padding: 8px;
+    background-image: url("./img/madera.jpg");
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.obras-container {
+    margin: 30px 0 0 0;
+}
+
+.subtitu-obra, .titu-obra {
+    color: #000;
+    margin: 0;
+}
+
+.titu-obra {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.obras-txt {
+    width: 620px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.obra img {
+    width: auto;
+    height: 220px; 
+}
+
+.obra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.obras-column {
+    margin: 0 15px;
+}
+
+.divider {
+    background-color: #000;
+    height: 3px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.obra-detail .marco {
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    background-image: url(./img/madera.jpg);
+    background-size: cover;
+}
+
+.obra-detail .obras-column {
+    padding-left: 110px;
+    margin-top: 50px;
+}
+
+.obra-detail .obra img {
+    width: auto;
+    height: 420px;
+}
+
+.detail-txt {
+    width: 600px;
+    margin-left: 90px;
+}
+
+.detail-txt h1 {
+    font-style: italic;
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin: 0 0 10px 0;
+}
+
+.detail-txt h2 {
+    font-style: normal;
+    font-size: 25px;
+    margin: 5px 0 20px 0;
+}
+
+.detail-txt h3 {
+    color: #000;
+    font-style: italic;
+    width: 400px;
+}
+
+.detail-txt h4 {
+    margin-top: 60px;
+    letter-spacing: 2px;
+}
